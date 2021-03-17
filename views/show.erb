@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>We postin our form results here </title>
+    </head>
+    <body>
+        <h1> Pirate</h1>
+
+        <div class="pirate">
+            <p>Name: <%=@pirate.name %> </p>
+            <p>Weight: <%= @pirate.weight %></p>
+            <p>Height: <%= @pirate.height %></p>
+        </div><br>
+
+        <h1>Ships</h1>
+            <% @ships.each do |ship| %>
+        <div class="ship"> 
+            <p>Name: <%= ship.name %></p><br>
+            <p>Type: <%= ship.type %></p><br>
+            <p>Booty: <%= ship.booty %></p><br>
+        </div><br>
+        <% end %>
+    </body>
+</html>
